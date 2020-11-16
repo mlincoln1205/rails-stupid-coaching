@@ -1,0 +1,20 @@
+<h1>Stupid Coaching</h1>
+
+<!-- print the user question -->
+
+<div class="user-question">
+  <p>You asked: <%= @user_input %></p>
+</div>
+
+<!-- If the message is I am going to work, the coach will answer Great! -->
+<div class="answers">
+  <p>Your coach says:</p>
+  <p><%= @answers %></p>
+</div>
+
+<!-- If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!. -->
+
+<%= link_to "Ask a new question" , ask_path %>
+
+<!-- Otherwise the coach will answer I don't care, get dressed and go to work! -->
+
